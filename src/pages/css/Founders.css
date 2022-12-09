@@ -1,0 +1,27 @@
+.founders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.founders > p {
+  max-width: 600px;
+  font-size: large;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.founders__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .founders__container {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}

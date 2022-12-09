@@ -1,0 +1,25 @@
+.tokenomics > div.flex {
+  align-items: center;
+}
+
+.tokenomics__left > img {
+  width: 95%;
+  height: 95%;
+  max-width: none;
+  max-height: none;
+}
+
+h4.supply {
+  font-size: 18pt;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 900px) {
+  .tokenomics .tokenomics__left {
+    flex: 0.7;
+  }
+
+  .tokenomics .tokenomics__right {
+    flex: 0.3;
+  }
+}

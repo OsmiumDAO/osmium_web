@@ -1,0 +1,39 @@
+.container > div.flex {
+  flex-direction: column;
+}
+
+.about__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about__image > img {
+  object-fit: contain;
+  width: 80%;
+  height: 80%;
+  max-width: 450px;
+  max-height: 450px;
+  margin-bottom: 10px;
+}
+
+.about__text {
+  color: inherit;
+}
+
+/* .about .about__image > img:hover {
+  transform: rotateZ(30deg);
+} */
+@media screen and (min-width: 900px) {
+  .container > div.flex {
+    flex-direction: row;
+  }
+
+  .about__image {
+    flex: 0.4;
+  }
+  .about__text {
+    flex: 0.6;
+  }
+}

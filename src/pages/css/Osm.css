@@ -1,0 +1,11 @@
+.osm .about__text .addresses {
+  width: 100%;
+  text-align: left;
+  font-size: large;
+  margin-bottom: 1rem;
+}
+
+.addresses > strong {
+  width: 150px;
+  display: inline-block;
+}
