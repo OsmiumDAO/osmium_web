@@ -1,13 +1,21 @@
 .comingsoon {
-  width: 380px;
-  height: 500px;
+  /* width: 300px; */
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 18pt;
+  font-size: 12pt;
   font-style: italic;
   color: green;
   font-family: 'Diplomata SC', cursive;
   font-weight: 700;
+}
+
+@media screen and (min-width: 900px) {
+  .comingsoon {
+    width: 380px;
+    height: 500px;
+    font-size: 18pt;
+  }
 }

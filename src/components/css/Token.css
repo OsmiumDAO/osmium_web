@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   margin: 1rem auto;
-  min-width: 400px;
   padding: 16px;
   border: solid 1px var(--bg-white);
   border-radius: 16px;
@@ -24,13 +23,13 @@
 }
 
 .token > span {
-  flex: 1;
   font-size: large;
 }
 
 .token > span.key {
   font-weight: 700;
   display: flex;
+  flex: 1;
   align-items: center;
   gap: 10px;
   text-transform: uppercase;
@@ -39,4 +38,13 @@
 .token .token__icon {
   font-size: 2em;
   color: var(--bg-white);
+}
+
+@media screen and (min-width: 900px) {
+  .token {
+    min-width: 350px;
+  }
+  .token span {
+    flex: 1;
+  }
 }

@@ -33,7 +33,7 @@ function Popup(props) {
       className='dialogWrapper'
       // classes={{ paper: classes.dialogWrapper }}
     >
-      <DialogTitle>
+      <DialogTitle sx={{ p: { xs: '5px', md: '10px' } }}>
         <div
           style={{
             minWidth: '100%',
