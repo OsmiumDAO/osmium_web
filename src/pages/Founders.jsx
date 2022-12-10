@@ -21,7 +21,7 @@ function Founders() {
     setShowpopup(true)
   }
   return (
-    <div className='container founders' id='founders'>
+    <div className='container founders' id='contributors'>
       <h2>Meet the initial contributors</h2>
       <p>
         Every member mentioned below serves a crucial role in the core
