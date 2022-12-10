@@ -11,11 +11,11 @@ function Home() {
           Community Driven Treasury and Investment Fund
         </Typography>
         <Typography variant='h6' align='justify'>
-          The ethos of web3.0 is ownership, portability, equality, community and
+          The ethos of WEB3.0 is ownership, portability, equality, community and
           transparency. We believe all these elements contribute to giving
           everyone economic and social identities. However, these also
           constitute all the essential aspects of DAOs, NFTs and native tokens.
-          join and learn.
+          join us and let's explore together.
         </Typography>
       </section>
       <section className='right home__image'>
