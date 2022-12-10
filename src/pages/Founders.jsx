@@ -64,11 +64,7 @@ function Founders() {
           ))}
         </Swiper>
       </Box>
-      {/* <div className='founders__container'>
-        {founders.map((f, i) => (
-          <Founder key={i + 1} founder={f} open={handleClick} />
-        ))}
-      </div> */}
+
       <Popup title='' open={showPopup} setOpen={setShowpopup}>
         <FounderDetail founder={active} />
       </Popup>
