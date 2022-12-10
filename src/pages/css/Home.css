@@ -29,9 +29,6 @@
   height: 100%;
   max-width: 700px;
   max-height: 60vh;
-  /* border-radius: 36px; */
-  /* opacity: 70%; */
-  /* clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 80%); */
 }
 .btn.MuiButton-root {
   padding: 6px 20px;
@@ -66,8 +63,8 @@
     flex: 1;
   }
 
-  section.lef.home__image {
-    flex: 0.4;
+  section.right.home__image {
+    flex: 0.6;
     border-radius: 26px;
   }
 }
