@@ -18,6 +18,18 @@
   gap: 20px;
   width: 100%;
 }
+
+.founders__container-2 {
+  min-height: max-content;
+  width: 80vw;
+  margin: 10px auto !important;
+}
+
+.founders__container-2 .fonder_wrapper {
+  margin: 10px auto 1rem auto;
+  /* display: flex; */
+  /* justify-content: center; */
+}
 @media screen and (min-width: 900px) {
   .founders__container {
     flex-direction: row;

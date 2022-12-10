@@ -20,11 +20,12 @@ import photo14 from '../assets/founders/14.png'
 import photo15 from '../assets/founders/15.webp'
 import photo16 from '../assets/founders/16.jpg'
 import photo17 from '../assets/founders/17.png'
+import photo18 from '../assets/founders/18.jpg'
 
-function Founder({ founder, open }) {
+function Founder({ founder, open, animate = true }) {
   const { name, position, socials } = founder
   return (
-    <div className='founder' data-aos='flip-up'>
+    <div className='founder' data-aos={animate ? 'flip-up' : null}>
       <span className='founder__image' onClick={(e) => open(founder)}>
         {name.charAt(0)}
       </span>
@@ -61,6 +62,7 @@ const photos = [
   photo15,
   photo16,
   photo17,
+  photo18,
 ]
 
 export const FounderDetail = function ({ founder }) {

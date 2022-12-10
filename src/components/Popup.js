@@ -30,6 +30,7 @@ function Popup(props) {
       open={open}
       onClose={() => setOpen(false)}
       maxWidth='md'
+      className='dialogWrapper'
       // classes={{ paper: classes.dialogWrapper }}
     >
       <DialogTitle>
@@ -45,12 +46,11 @@ function Popup(props) {
             {title}
           </Typography>
           <IconButton
-            text={'X'}
             onClick={() => setOpen(false)}
             color='secondary'
             style={{ marginLeft: '16px' }}
           >
-            <GrClose />
+            <GrClose className='dialog__close' />
           </IconButton>
         </div>
       </DialogTitle>

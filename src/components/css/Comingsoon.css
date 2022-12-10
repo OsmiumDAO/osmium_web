@@ -1,0 +1,13 @@
+.comingsoon {
+  width: 380px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18pt;
+  font-style: italic;
+  color: green;
+  font-family: 'Diplomata SC', cursive;
+  font-weight: 700;
+}

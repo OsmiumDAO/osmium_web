@@ -5,7 +5,6 @@ import Home from './pages/Home'
 import defaultTheme from './themes/default'
 import About from './pages/About'
 import { useEffect } from 'react'
-import WhitePaper from './pages/WhitePaper'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Tokenomics from './pages/Tokenomics'
@@ -14,6 +13,7 @@ import RoadMap from './pages/RoadMap'
 import Osm from './pages/Osm'
 import Nft from './pages/Nft'
 import Footer from './components/Footer'
+import Wallets from './pages/Wallets'
 
 function App() {
   // const [showscroll, setShowScroll] = useState(true)
@@ -30,18 +30,18 @@ function App() {
         <Home />
         {/* About */}
         <About />
-        {/* White paper */}
-        <WhitePaper />
         {/* Tokenomics */}
         <Tokenomics />
-        {/* Founders */}
-        <Founders />
+        {/* Wallets */}
+        <Wallets />
         {/* Road Map */}
         <RoadMap />
         {/* Get Osm */}
         <Osm />
         {/* Nft */}
         <Nft />
+        {/* Founders */}
+        <Founders />
         {/* Footer */}
         <Footer />
         <CssBaseline />

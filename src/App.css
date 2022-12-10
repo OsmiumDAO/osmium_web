@@ -4,9 +4,10 @@
   width: 100%;
   color: white;
   scroll-snap-type: y mandatory;
+  position: relative;
 }
 
-.app > div:nth-child(even) {
+.app > div:nth-child(odd) {
   background-color: var(--bg-white);
   color: var(--bg-main);
 }
@@ -16,5 +17,19 @@
   font-weight: 700;
   text-align: center;
   margin: 10px auto;
+}
+
+.dialogWrapper.MuiDialog-root .MuiPaper-root {
+  position: absolute !important;
+  top: 8px;
+}
+
+.dialogWrapper .MuiDialogTitle-root {
+  background-color: var(--bg-light);
+}
+
+.dialogWrapper .MuiIconButton-root,
+.dialogWrapper .MuiIconButton-root:hover {
+  background-color: var(--bg-white);
 }
 

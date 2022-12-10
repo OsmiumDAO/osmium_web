@@ -6,7 +6,7 @@ import { Link } from '@mui/material'
 function Osm() {
   return (
     <div className='osm container' id='get osm'>
-      <h2 className='subtitle'>OSM</h2>
+      {/* <h2 className='subtitle'>OSM</h2> */}
       <div className='flex'>
         <section className='about__image'>
           <img src={osmImg} alt='' />
@@ -21,25 +21,28 @@ function Osm() {
           <p className='addresses'>
             <strong>Asset:</strong>{' '}
             <Link href='https://pool.pm/asset1q53lwe67n2sqsqx4ek6a06f6vw24yjqefk8f53'>
-              asset1q53lwe67n2sqsqx4ek6a06f6vw24yjqefk8f53
+              View
             </Link>
           </p>
           <p className='addresses'>
             <strong>Policy ID:</strong>
             <Link href='https://cardanoscan.io/tokenPolicy/37a2b93b4aa2b286b92b7099faff0bb87e0c629a5079c0584da2d577'>
-              37a2b93b4aa2b286b92b7099faff0bb87e0c629a5079c0584da2d577
+              Policy
             </Link>
           </p>
           <p>
-            The OSM token is designed to serve as a claim on the treasury. If
-            the pioneers ever decide to dissolve the treasury, all treasury
-            funds will be distributed pro-rata to OSM token holders. With an
-            extremely low supply, supportive community, slow and decentralized
-            emission rate and periodic secondary market buyback, $OSM tokens are
-            expected to keep their value without significant depreciation
-            overtime. The DAO is designed to ensure that external funds are
-            always sought for through numerous ways which in the long term, will
-            hedge the overall value of OSM.
+            The OsmiumDAO native token $OSM will serve as the residual claim on
+            the treasury. The treasury is essentially owned by OSM tokens. If
+            the Investment Committee decides to make distributions from the
+            treasury, they will be made to NFT holders pro-rata to OSM tokens
+            held (like a dividend). The investment committee may also choose to
+            buyback (through open market operations) tokens and may also sell
+            some of the tokens in the treasury to raise additional capital when
+            they believe the time is right. The OSM tokens will also be used for
+            governance of the DAO (voting) alongside the OsmiumShare NFTs. The
+            total supply of $OSM will be 600k. The entire supply of $OSM will be
+            distributed to DAO members/pioneers over the course of eight years
+            and through a fair distribution model.
           </p>
           <p>
             OSM tokens can also be used as a medium of exchange. Being a

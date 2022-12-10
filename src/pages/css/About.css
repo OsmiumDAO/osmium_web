@@ -22,6 +22,10 @@
   color: inherit;
 }
 
+.about__text p {
+  text-align: justify;
+}
+
 /* .about .about__image > img:hover {
   transform: rotateZ(30deg);
 } */

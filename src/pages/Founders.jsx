@@ -1,7 +1,15 @@
+import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import Founder, { FounderDetail } from '../components/Founder'
 import Popup from '../components/Popup'
 import founders from '../data/founders'
+import { Pagination, Autoplay } from 'swiper'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/pagination'
 import './css/Founders.css'
 
 function Founders() {
@@ -16,16 +24,51 @@ function Founders() {
     <div className='container founders' id='founders'>
       <h2>Meet the initial contributors</h2>
       <p>
-        Every member of the team serves a crucial role in further development
-        and management of the protocol, the community, and direction. Hover over
-        each member to learn more about thier experience and the role in the
-        Osmium team.
+        Every member mentioned below serves a crucial role in the core
+        formation, development and management of the DAO and its community.
       </p>
-      <div className='founders__container'>
+      <Box
+        className='founders__container'
+        sx={{
+          flexGrow: 1,
+          display: { xs: 'none', md: 'flex' },
+          justifyContent: 'center',
+        }}
+      >
         {founders.map((f, i) => (
           <Founder key={i + 1} founder={f} open={handleClick} />
         ))}
-      </div>
+      </Box>
+      <Box sx={{ display: { xs: 'flex', md: 'none' }, flexGrow: 1 }}>
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          autoplay={{
+            delay: 3000,
+            pauseOnMouseEnter: true,
+            waitForTransition: true,
+          }}
+          spaceBetween={40}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          className='founders__container-2'
+        >
+          {founders.map((f, i) => (
+            <SwiperSlide key={i} className='fonder_wrapper'>
+              <Founder
+                animate={false}
+                key={i + 1}
+                founder={f}
+                open={handleClick}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Box>
+      {/* <div className='founders__container'>
+        {founders.map((f, i) => (
+          <Founder key={i + 1} founder={f} open={handleClick} />
+        ))}
+      </div> */}
       <Popup title='' open={showPopup} setOpen={setShowpopup}>
         <FounderDetail founder={active} />
       </Popup>

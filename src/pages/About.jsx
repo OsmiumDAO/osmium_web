@@ -5,7 +5,7 @@ import './css/About.css'
 function About() {
   return (
     <div className='container about' id='about'>
-      <h2 className='subtitle'>About The DAO</h2>
+      {/* <h2 className='subtitle'>About The DAO</h2> */}
       <div className='flex'>
         <div className='about__image'>
           <img src={aboutImg} alt='' />

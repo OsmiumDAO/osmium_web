@@ -14,15 +14,17 @@ import {
 } from '@mui/material'
 import { ImMenu } from 'react-icons/im'
 import darkLogo from '../assets/logo_dark.png'
+import { FaCloudDownloadAlt } from 'react-icons/fa'
+import whitePaper from '../assets/white_paper.pdf'
 const pages = [
   'Home',
   'About',
-  'White Paper',
   'Tokenomics',
-  'Founders',
+  'Wallets',
   'Roadmap',
-  'Get osm',
-  'Nft',
+  'Get OSM',
+  'NFT',
+  'Contributors',
 ]
 
 function Header() {
@@ -44,7 +46,9 @@ function Header() {
             sx={{ gap: '15px', display: { xs: 'none', md: 'flex' } }}
             className='brand'
           >
-            <img src={darkLogo} alt='' className='logo' />
+            <Link href='#home'>
+              <img src={darkLogo} alt='' className='logo' />
+            </Link>
             <Typography
               variant='h6'
               className='brandname'
@@ -92,6 +96,11 @@ function Header() {
                   </Link>
                 </MenuItem>
               ))}
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link href={whitePaper} download>
+                  <Typography textAlign='center'>White Paper</Typography>
+                </Link>
+              </MenuItem>
             </Menu>
           </Box>
           <Typography
@@ -110,10 +119,10 @@ function Header() {
               justifyContent: 'flex-end',
             }}
           >
-            {pages.map((page) => (
+            {pages.map((page, i) => (
               <Link href={`#${page.toLocaleLowerCase()}`}>
                 <Button
-                  key={page}
+                  key={page + i}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
@@ -121,6 +130,11 @@ function Header() {
                 </Button>
               </Link>
             ))}
+            <Link href={whitePaper} download>
+              <Button startIcon={<FaCloudDownloadAlt />} className='btn'>
+                Paper
+              </Button>
+            </Link>
           </Box>
         </Toolbar>
       </Container>

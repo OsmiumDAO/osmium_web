@@ -20,7 +20,10 @@ function RoadMap() {
 const Phase = ({ stages, no }) => {
   return (
     <div className='phase' data-aos='flip-left'>
-      <span className='phase__no'>{no}</span>
+      <span className='phase__no'>
+        <i>Phase</i>
+        {no}
+      </span>
       <ul>
         {stages.map((stage, i) => (
           <li key={stage}>{stage}</li>

@@ -1,0 +1,61 @@
+.wallets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wallets .wallets__list {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+li.wallet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 1rem 0;
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 12px;
+  /* border: solid 1px var(--bg-main); */
+  max-width: fit-content;
+  max-height: fit-content;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+li.wallet > h4 {
+  margin: 0;
+  text-align: left;
+}
+
+li.wallet > p {
+  /* text-align: justify;
+  display: flex; */
+  word-break: break-all;
+  white-space: normal;
+  max-width: 400px;
+  height: fit-content;
+  position: relative;
+  margin: 0;
+}
+
+li.wallet > p > button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .wallets .wallets__list {
+    flex-direction: row;
+    gap: 25px;
+  }
+}
