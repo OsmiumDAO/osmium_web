@@ -13,8 +13,8 @@
   object-fit: contain;
   width: 80%;
   height: 80%;
-  max-width: 450px;
-  max-height: 450px;
+  max-width: 380px;
+  max-height: 380px;
   margin-bottom: 10px;
 }
 
@@ -24,6 +24,12 @@
 
 .about__text p {
   text-align: justify;
+  margin-top: 0;
+  font-size: 12pt;
+}
+
+.about__text h4 {
+  margin: 0;
 }
 
 /* .about .about__image > img:hover {
@@ -32,6 +38,7 @@
 @media screen and (min-width: 900px) {
   .container > div.flex {
     flex-direction: row;
+    flex: 1;
   }
 
   .about__image {
@@ -39,5 +46,8 @@
   }
   .about__text {
     flex: 0.6;
+  }
+  .about__text p {
+    font-size: 16pt;
   }
 }

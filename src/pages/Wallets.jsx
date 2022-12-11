@@ -7,7 +7,7 @@ import './css/Wallets.css'
 function Wallets() {
   return (
     <div className='container wallets' id='wallets'>
-      <h2 className='subtitle'>DAO's Wallets</h2>
+      <h2 className='subtitle'>DAO Wallets</h2>
       <ul className='wallets__list'>
         {wallets.map((w, i) => (
           <Wallet wallet={w} key={i + 1} />

@@ -13,10 +13,10 @@
 }
 
 .app .subtitle {
-  font-size: min(max(2rem, 5vw), 3rem);
+  font-size: min(max(2rem, 5vw), 2rem);
   font-weight: 700;
   text-align: center;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 .dialogWrapper.MuiDialog-root .MuiPaper-root {
@@ -31,5 +31,19 @@
 .dialogWrapper .MuiIconButton-root,
 .dialogWrapper .MuiIconButton-root:hover {
   background-color: var(--bg-white);
+}
+
+/* Reset Paper color for MuiAccordion */
+.MuiPaper-root.MuiAccordion-root,
+.MuiAccordionSummary-root,
+.MuiAccordionSummary-content,
+.MuiAccordionDetails-root {
+  background-color: transparent !important;
+  color: inherit;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
+  min-height: 40px !important;
 }
 

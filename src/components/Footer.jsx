@@ -11,6 +11,7 @@ import { SiBloglovin } from 'react-icons/si'
 import { VscLaw } from 'react-icons/vsc'
 import { Link, Tooltip } from '@mui/material'
 import tangentLogo from '../assets/partners/tangent.png'
+import nomicsLogo from '../assets/partners/nomics.png'
 
 import whitePaper from '../assets/white_paper.pdf'
 
@@ -48,8 +49,15 @@ function Footer() {
         <h3>Partners</h3>
         <div className='partners__container'>
           <Link href='https://tangent.art'>
-            <img src={tangentLogo} alt='' />
-            Tangent
+            <Tooltip title='Tangent'>
+              <img src={tangentLogo} alt='' />
+            </Tooltip>
+          </Link>
+
+          <Link href='https://nomics.com/assets/osm3-osm'>
+            <Tooltip title='Nomics'>
+              <img src={nomicsLogo} alt='' />
+            </Tooltip>
           </Link>
         </div>
       </section>
