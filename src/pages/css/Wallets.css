@@ -50,7 +50,7 @@ li.wallet > p {
 li.wallet > p > button {
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 100%;
 }
 
 @media screen and (min-width: 900px) {
