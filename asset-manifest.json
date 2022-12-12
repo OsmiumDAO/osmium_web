@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/osmium_web/static/css/main.f2281ad5.css",
-    "main.js": "/osmium_web/static/js/main.6ed07dc7.js",
+    "main.js": "/osmium_web/static/js/main.904b4857.js",
     "static/media/10.gif": "/osmium_web/static/media/10.62f0cd072371fafa29f5.gif",
     "static/media/tokenomics_img.png": "/osmium_web/static/media/tokenomics_img.ecb29a1061fa788181fe.png",
     "static/media/home.png": "/osmium_web/static/media/home.efbd4b47db362305f37b.png",
@@ -28,10 +28,10 @@
     "static/media/15.webp": "/osmium_web/static/media/15.100cf7073a84258b210f.webp",
     "index.html": "/osmium_web/index.html",
     "main.f2281ad5.css.map": "/osmium_web/static/css/main.f2281ad5.css.map",
-    "main.6ed07dc7.js.map": "/osmium_web/static/js/main.6ed07dc7.js.map"
+    "main.904b4857.js.map": "/osmium_web/static/js/main.904b4857.js.map"
   },
   "entrypoints": [
     "static/css/main.f2281ad5.css",
-    "static/js/main.6ed07dc7.js"
+    "static/js/main.904b4857.js"
   ]
 }
