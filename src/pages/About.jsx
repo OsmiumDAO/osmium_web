@@ -46,7 +46,7 @@ function About() {
               <p>
                 Osmium DAO will be governed by the OsmiumShare NFT holders, who
                 have at least a minimum required amount of OSM tokens as
-                determined By the community on a quaterly basis. NFT holders are
+                determined by the community on a quaterly basis. NFT holders are
                 responsible for adding and removing members from the Board, and
                 participating in working groups to assist in maintaining growing
                 the DAO.
