@@ -22,22 +22,22 @@ function Footer() {
         <h3>Join us</h3>
         <span></span>
         <div className='flex'>
-          <Link href={'https://twitter.com/OsmiumDAO_'}>
+          <Link target='_blank' href={'https://twitter.com/OsmiumDAO_'}>
             <Tooltip title='Twitter'>
               <FiTwitter className='socials__icon' />
             </Tooltip>
           </Link>
-          <Link href='https://discord.gg/TFzmEYyyHw'>
+          <Link target='_blank' href='https://discord.gg/TFzmEYyyHw'>
             <Tooltip title='Discord'>
               <RxDiscordLogo className='socials__icon' />
             </Tooltip>
           </Link>
-          <Link href=''>
+          <Link target='_blank' href=''>
             <Tooltip color='white' title='Medium'>
               <BsMedium className='socials__icon' />
             </Tooltip>
           </Link>
-          <Link href=''>
+          <Link target='_blank' href=''>
             <Tooltip title='Youtube'>
               <CiYoutube className='socials__icon' />
             </Tooltip>
@@ -48,13 +48,13 @@ function Footer() {
       <section className='partners'>
         <h3>Partners</h3>
         <div className='partners__container'>
-          <Link href='https://tangent.art'>
+          <Link target='_blank' href='https://tangent.art'>
             <Tooltip title='Tangent'>
               <img src={tangentLogo} alt='' />
             </Tooltip>
           </Link>
 
-          <Link href='https://nomics.com/assets/osm3-osm'>
+          <Link target='_blank' href='https://nomics.com/assets/osm3-osm'>
             <Tooltip title='Nomics'>
               <img src={nomicsLogo} alt='' />
             </Tooltip>
@@ -71,18 +71,18 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link href={'https://twitter.com/OsmiumDAO_'}>
+            <Link target='_blank' href={'https://twitter.com/OsmiumDAO_'}>
               <SiBloglovin />
               Blog
             </Link>
           </li>
           <li>
-            <Link href={whitePaper} download>
+            <Link target='_blank' href={whitePaper} download>
               <IoNewspaperSharp /> Whitepaper
             </Link>
           </li>
           <li>
-            <Link href='https://github.com/OsmiumDAO'>
+            <Link target='_blank' href='https://github.com/OsmiumDAO'>
               <BsGithub /> Github
             </Link>
           </li>
