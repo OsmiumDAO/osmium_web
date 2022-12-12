@@ -71,7 +71,7 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link>
+            <Link href={'https://twitter.com/OsmiumDAO_'}>
               <SiBloglovin />
               Blog
             </Link>
