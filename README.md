@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## About Osmium DAO
 
 Here we write about osmium
+Osmium is a DAO made by the community and for the community.
 
 In the project directory, you can run:
 
