@@ -98,14 +98,14 @@ const founders = [
     about: '',
   },
   {
-    name: 'Rodolfo Hayek',
+    name: 'Daniel Sampson',
     photo: 6,
     position: 'cofounder',
     socials: {
       twitter: '',
     },
     about:
-      'Chemical Engineer and I´m from Mexico. I´m currently a crypto miner and a Cardano enthusiast.',
+      'Business Development Enterpreneur | DeFi Enthusiast | Investor Relations | CEO Metera DAO',
   },
   {
     name: 'HeyJosuess',

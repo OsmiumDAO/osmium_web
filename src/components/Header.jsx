@@ -91,12 +91,17 @@ function Header() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Link href={`#${page.toLocaleLowerCase()}`}>
+                  <Link
+                    sx={{
+                      textDecoration: 'none',
+                    }}
+                    href={`#${page.toLocaleLowerCase()}`}
+                  >
                     <Typography textAlign='center'>{page}</Typography>
                   </Link>
                 </MenuItem>
               ))}
-              <MenuItem onClick={handleCloseNavMenu}>
+              <MenuItem onClick={handleCloseNavMenu} style={{ width: '200px' }}>
                 <Link href={whitePaper} download>
                   <Typography textAlign='center'>White Paper</Typography>
                 </Link>

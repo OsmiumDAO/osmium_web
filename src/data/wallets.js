@@ -2,7 +2,8 @@ const wallets = [
   {
     title: 'Treasury Wallet',
     address:
-      'addr1x8pwxyr2zx5xpucxlns9ha4cjeqk902ewq3jmyn6wd7gsq7zuvgx5ydgvresdl8qt0mt39jpv274jupr9kf85umu3qps3hhrqr',
+      'addr1x84xk8ad06s03pd8yuxkrursufv4wzy3eld5zafhwxql6w3060czzmy4xl40lq2y0xt3eq93e726xv0tskpj0g52duzs8882nz',
+    // 'addr1x8pwxyr2zx5xpucxlns9ha4cjeqk902ewq3jmyn6wd7gsq7zuvgx5ydgvresdl8qt0mt39jpv274jupr9kf85umu3qps3hhrqr',
     link: 'https://pool.pm/$Osmium',
   },
   {
