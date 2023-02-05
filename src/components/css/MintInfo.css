@@ -1,0 +1,17 @@
+.mintinfo.comingsoon {
+  font-size: normal;
+  /* font-weight: normal; */
+  color: var(--bg-main);
+}
+.mintinfo > ul {
+  list-style-type: square;
+}
+
+.mintinfo ul li {
+  display: flex;
+  gap: 5px;
+}
+
+.mintinfo ul li > span {
+  flex: 1;
+}

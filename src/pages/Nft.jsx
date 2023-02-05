@@ -8,8 +8,9 @@ import {
   Button,
 } from '@mui/material'
 import Popup from '../components/Popup'
-import ComingSoon from '../components/ComingSoon'
+// import ComingSoon from '../components/ComingSoon'
 import { MdOutlineExpandLess, MdOutlineExpandMore } from 'react-icons/md'
+import MintInfo from '../components/MintInfo'
 
 function Nft() {
   const [open, setOpen] = useState(false)
@@ -87,7 +88,8 @@ function Nft() {
         </section>
       </div>
       <Popup open={open} setOpen={setOpen}>
-        <ComingSoon />
+        {/* <ComingSoon /> */}
+        <MintInfo />
       </Popup>
     </div>
   )

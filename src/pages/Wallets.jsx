@@ -17,7 +17,7 @@ function Wallets() {
   )
 }
 
-const Wallet = ({ wallet }) => {
+export const Wallet = ({ wallet }) => {
   const [text, setText] = useState('copy')
 
   const handleCopy = async (address) => {
@@ -43,9 +43,11 @@ const Wallet = ({ wallet }) => {
           {text} {text === 'copy' && <AiOutlineCopy />}
         </button>
       </p>
-      <Link href={wallet?.link} target='_blank'>
-        <Button className='btn'>View</Button>
-      </Link>
+      {wallet?.link && (
+        <Link href={wallet.link} target='_blank'>
+          <Button className='btn'>View</Button>
+        </Link>
+      )}
     </li>
   )
 }
