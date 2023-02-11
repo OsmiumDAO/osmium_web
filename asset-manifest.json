@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c7fd071.css",
-    "main.js": "/static/js/main.1949125f.js",
+    "main.css": "/static/css/main.ace0f66d.css",
+    "main.js": "/static/js/main.b8cc2d8a.js",
     "static/media/10.gif": "/static/media/10.62f0cd072371fafa29f5.gif",
     "static/media/tokenomics_img.png": "/static/media/tokenomics_img.ecb29a1061fa788181fe.png",
     "static/media/home.png": "/static/media/home.efbd4b47db362305f37b.png",
@@ -27,11 +27,11 @@
     "static/media/nomics.png": "/static/media/nomics.042eaa06fed4397e1357.png",
     "static/media/15.webp": "/static/media/15.100cf7073a84258b210f.webp",
     "index.html": "/index.html",
-    "main.5c7fd071.css.map": "/static/css/main.5c7fd071.css.map",
-    "main.1949125f.js.map": "/static/js/main.1949125f.js.map"
+    "main.ace0f66d.css.map": "/static/css/main.ace0f66d.css.map",
+    "main.b8cc2d8a.js.map": "/static/js/main.b8cc2d8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c7fd071.css",
-    "static/js/main.1949125f.js"
+    "static/css/main.ace0f66d.css",
+    "static/js/main.b8cc2d8a.js"
   ]
 }
