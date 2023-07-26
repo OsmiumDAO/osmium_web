@@ -1,28 +1,29 @@
-import React, { useState } from 'react'
-import './css/nft.css'
-import nftImg from '../assets/nft_img.png'
+import React, { useState } from "react";
+import "./css/nft.css";
+import nftImg from "../assets/nft_img.png";
 import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
   Button,
-} from '@mui/material'
-import Popup from '../components/Popup'
+} from "@mui/material";
+import Popup from "../components/Popup";
 // import ComingSoon from '../components/ComingSoon'
-import { MdOutlineExpandLess, MdOutlineExpandMore } from 'react-icons/md'
-import MintInfo from '../components/MintInfo'
+import { MdOutlineExpandLess, MdOutlineExpandMore } from "react-icons/md";
+import MintInfo from "../components/MintInfo";
+import ComingSoon from "../components/ComingSoon";
 
 function Nft() {
-  const [open, setOpen] = useState(false)
-  const [expanded, setExpanded] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   return (
-    <div className='container nft' id='nft'>
-      <h2 className='subtitle'>NFT</h2>
-      <div className='flex'>
-        <section className='about__image'>
-          <img src={nftImg} alt='' />
+    <div className="container nft" id="nft">
+      <h2 className="subtitle">NFT</h2>
+      <div className="flex">
+        <section className="about__image">
+          <img src={nftImg} alt="" />
         </section>
-        <section className='about__text'>
+        <section className="about__text">
           <p>
             Non Fungible Tokens are going to play a crucial role in the
             OsmiumDAO ecosystem. Holding these NFTs will provide access to
@@ -34,18 +35,18 @@ function Nft() {
             of NFT collections; OG OsmiumShare, OsmiumShare and OSPioneer.
           </p>
           <Accordion
-            aria-controls='panel1a-content'
-            id='panel1a-header'
+            aria-controls="panel1a-content"
+            id="panel1a-header"
             elevation={0}
-            className='myaccordion dark'
+            className="myaccordion dark"
           >
             <AccordionSummary onClick={() => setExpanded(!expanded)}>
               {expanded ? (
-                <span className='expand_text'>
+                <span className="expand_text">
                   <MdOutlineExpandLess />
                 </span>
               ) : (
-                <span className='expand_text'>
+                <span className="expand_text">
                   More... <MdOutlineExpandMore />
                 </span>
               )}
@@ -81,18 +82,18 @@ function Nft() {
 
           <Button
             onClick={() => setOpen(true)}
-            className='btn btn-large mintbtn'
+            className="btn btn-large mintbtn"
           >
             Mint now
           </Button>
         </section>
       </div>
       <Popup open={open} setOpen={setOpen}>
-        {/* <ComingSoon /> */}
-        <MintInfo />
+        <ComingSoon />
+        {/* <MintInfo /> */}
       </Popup>
     </div>
-  )
+  );
 }
 
-export default Nft
+export default Nft;
